@@ -9,6 +9,7 @@ import (
 type webWriter struct{}
 
 func (webWriter) Write(w []byte) (int, error) {
+	fmt.Printf("Get website...")
 	fmt.Println(string(w))
 	return len(w), nil
 }
